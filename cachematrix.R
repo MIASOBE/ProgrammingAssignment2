@@ -2,7 +2,7 @@
 ## matrix and the ability to cache the result. This can be used to improve performance if this process
 ## needs to be repeated many times
 
-## This function creates a special "matrix" object that can cache its inverse.
+## This function creates a special "matrix" object that can cache it's inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
           ## Initialize m - used to cahce the inverse of the matrix
