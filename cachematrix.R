@@ -1,11 +1,11 @@
 ## The following two functions were implemented to support the calculation of the inverse of an invertible
 ## matrix and the ability to cache the result. This can be used to improve performance if this process
-## needs to be repeated many times
+## needs to be repeated many times.
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-          ## Initialize m - used to cahce the inverse of the matrix
+          ## Initialize m - used to cache the inverse of the matrix
           m <- NULL
           
           ## Define and implement set, get, setInverse,and getInverse functions
@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
           }
           get <- function() x
           
-          ## Uused to set the cached inverse of the matrix
+          ## Used to set the cached inverse of the matrix
           setInverse <- function(inverse) m <<- inverse
           
           ## Used to get/return the cached inverse of the matrix
@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
         ## Tries to get the inverse of the matrix in the list passed in
         m <- x$getInverse()
         
-        ## If it is not null then just used the cached version
+        ## If it is not null then just use the cached version
         if(!is.null(m)) {
               ## This message just lets the user know that a cached version of the inverse is being returned,
               ## but this can be removed if we don't want to get this message
