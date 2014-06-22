@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...) {
               return(m)
         }
         
-        ## If nothing is returned then need to get the matrix from the list passed in
+        ## If nothing is returned then need to get the matrix from the list(object) that was passed in
         data <- x$get()
         
         ## and compute the inverse of the matrix returned
